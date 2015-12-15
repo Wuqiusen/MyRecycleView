@@ -30,7 +30,7 @@ public class MainActivity extends ActionBarActivity {
         mRecyclerView = (RecyclerView) findViewById(R.id.id_recyclerview_horizontal);
         //设置布局管理器
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(MainActivity.this);
-        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);//设置方向
         mRecyclerView.setLayoutManager(linearLayoutManager);
 
 
