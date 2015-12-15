@@ -19,6 +19,6 @@
 
 
 ###MainActivity
- LinearLayoutManager linearLayoutManager = new LinearLayoutManager(MainActivity.this);
+    LinearLayoutManager linearLayoutManager = new LinearLayoutManager(MainActivity.this);
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);//ÉèÖÃ·½Ïò
         mRecyclerView.setLayoutManager(linearLayoutManager);
