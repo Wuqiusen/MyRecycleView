@@ -1,11 +1,53 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#158888"
+    tools:context="zxzs.ppgj.ui.activity.ride.TripDetailActivity">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:animateOnClick="true"
+        android:content="@+id/content_layout"
+        android:handle="@+id/handle_layout"
+        android:orientation="horizontal"
+        android:rotation="180"
+        >
+        <LinearLayout
+            android:id="@+id/handle_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-</RelativeLayout>
+            <ImageView
+                android:id="@+id/iv_hot_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:rotation="180"
+                android:src="@mipmap/img_open_station"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:rotation="180">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/id_recyclerview_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:scrollbars="none"
+                android:background="#ff158844"
+
+                />
+
+        </LinearLayout>
+    </SlidingDrawer>
+</FrameLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/rl_line_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/id_index_gallery_item_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/img"/>
+
+            <TextView
+                android:id="@+id/id_index_gallery_item_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车站名称"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/id_index_gallery_item_image"
+                android:layout_marginLeft="4dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/id_index_gallery_item_image"
+                android:layout_toRightOf="@+id/id_index_gallery_item_image"
+                android:background="#000000"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
